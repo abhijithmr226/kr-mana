@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
   console.log(`${req.method} ${req.url}`);
 
   // Resolve file path
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url.split('?')[0]);
+  let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url.split('?')[0]);
   
   // Get extension
   const ext = path.extname(filePath).toLowerCase();
@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
     if (error) {
       if (error.code === 'ENOENT') {
         // File not found -> fallback to index.html or 404
-        fs.readFile(path.join(__dirname, '404.html'), (err, notFoundContent) => {
+        fs.readFile(path.join(__dirname, 'public', '404.html'), (err, notFoundContent) => {
           res.writeHead(404, { 'Content-Type': 'text/html' });
           res.end(notFoundContent || '<h1>404 - Not Found</h1>', 'utf-8');
         });
