@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | KR Thekkedathu Mana</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .error-container {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--spacing-lg) var(--spacing-md);
+      background-color: var(--color-bg-primary);
+    }
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: clamp(4rem, 10vw, 8rem);
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: var(--spacing-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <img src="assets/logo/logo-main.png" alt="KR Thekkedathu Mana Logo">
+        </div>
+        <span class="nav-logo-desc">Heritage Resort & Event Venue</span>
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Suites & Rooms</a></li>
+        <li><a href="ayurveda.html" class="nav-link">Ayurveda & Wellness</a></li>
+        <li><a href="events.html" class="nav-link">Weddings & Events</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Error Content -->
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <h2 style="margin-bottom: var(--spacing-sm);">Sanctuary Lost</h2>
+    <p style="max-width: 500px; margin-bottom: var(--spacing-md);">The page you are looking for has either been moved, deleted, or does not exist in our heritage preserve.</p>
+    <a href="index.html" class="btn btn-dark">Return to Homepage</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/logo/logo-main.png" alt="KR Thekkedathu Mana Logo">
+        </div>
+        <p class="footer-desc">Experience traditional Kerala hospitality, rejuvenation, and memorable events at our 125-year-old double Nalukettu mansion.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>+91 8943227722 | +91 4885262371</p>
+        <p>krthekkedathumana@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
